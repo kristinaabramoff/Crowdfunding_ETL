@@ -21,44 +21,44 @@ This collaborative approach has several benefits:
 
 ### Create Category and Subcategory DataFrames
 
-Category DataFrame:
+#### Category DataFrame:
 
-  Extract and transform crowdfunding.xlsx data.
-  Columns: category_id (sequential from cat1 to catn), category (category titles).
-  Export as category.csv and save to GitHub.
+Extract and transform crowdfunding.xlsx data.
+Columns: category_id (sequential from cat1 to catn), category (category titles).
+Export as category.csv and save to GitHub.
   
-Subcategory DataFrame:
+#### Subcategory DataFrame:
 
-  Extract and transform crowdfunding.xlsx data.
-  Columns: subcategory_id (sequential from subcat1 to subcatn), subcategory (subcategory titles).
-  Export as subcategory.csv and save to GitHub.
+Extract and transform crowdfunding.xlsx data.
+Columns: subcategory_id (sequential from subcat1 to subcatn), subcategory (subcategory titles).
+Export as subcategory.csv and save to GitHub.
   
-Create Campaign DataFrame
+#### Create Campaign DataFrame
 
-  Extract and transform crowdfunding.xlsx data.
-  Columns:
-      cf_id, contact_id, company_name, description (renamed from blurb), goal (float), pledged (float), outcome, backers_count, country, 
-      currency, launch_date (renamed from launched_at and converted to datetime format), 
-      end_date (renamed from deadline and converted to datetime format), category_id, subcategory_id.
-  Export as campaign.csv and save to GitHub.
+Extract and transform crowdfunding.xlsx data.
+Columns:
+    cf_id, contact_id, company_name, description (renamed from blurb), goal (float), pledged (float), outcome, backers_count, country, 
+    currency, launch_date (renamed from launched_at and converted to datetime format), 
+    end_date (renamed from deadline and converted to datetime format), category_id, subcategory_id.
+Export as campaign.csv and save to GitHub.
   
-Create Contacts DataFrame
+#### Create Contacts DataFrame
 
-  Import contacts.xlsx into a DataFrame.
-    Convert each row to a dictionary.
-    Extract dictionary values and add them to a new list.
-    Create a new DataFrame from this list.
-    Split name column into first_name and last_name.
+Import contacts.xlsx into a DataFrame.
+Convert each row to a dictionary.
+Extract dictionary values and add them to a new list.
+Create a new DataFrame from this list.
+Split name column into first_name and last_name.
 
 ### Database Creation
 
-  Create the Crowdfunding Database
-    Inspect the four CSV files.
-    Sketch an ERD using QuickDBD.
-    Create a table schema for each CSV file (specifying data types, primary keys, foreign keys, and other constraints).
-    Save the schema as crowdfunding_db_schema.sql and save to GitHub.
-    Create a new Postgres database named crowdfunding_db.
-    Use the schema to create the tables in the correct order.
-    Verify table creation with a SELECT statement for each table.
-    Import each CSV file into its corresponding SQL table.
-    Verify the data with a SELECT statement for each table.
+#### Create the Crowdfunding Database
+Inspect the four CSV files.
+Sketch an ERD using QuickDBD.
+Create a table schema for each CSV file (specifying data types, primary keys, foreign keys, and other constraints).
+Save the schema as crowdfunding_db_schema.sql and save to GitHub.
+Create a new Postgres database named crowdfunding_db.
+Use the schema to create the tables in the correct order.
+Verify table creation with a SELECT statement for each table.
+Import each CSV file into its corresponding SQL table.
+Verify the data with a SELECT statement for each table.
