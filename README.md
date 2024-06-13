@@ -1,10 +1,10 @@
-## Project 2: Crowdfunding_ETL
+# Project 2: Crowdfunding_ETL
 Group 4: Alvin, Kristina, Mason, Lisa and Frank
 
-# Introduction
+## Introduction
 For the ETL mini project, we will work in a group of 5 to practise building an ETL pipeline using Python, Pandas, and either Python dictionary methods or regular expressions to extract and transform the data. After transforming the data, we create four CSV files and use the CSV file data to create an ERD and a table schema. Finally, we upload the CSV file data into a Postgres database.
 
-# Programming Technique
+## Programming Technique
 We have been used Pair Programming, in this case, group programming where 5 of us work together at one workstation. On team member, called the "driver", writes and execute the code while the others, known as the "observers" or "navigators," reviews each line of code as it is written, give feedback or recommendations as well as advice on debugging. We have switched roles frequently among us in order to balance the coding time between all members.
 
 This collaborative approach has several benefits:
