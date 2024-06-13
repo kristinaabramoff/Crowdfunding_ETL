@@ -22,16 +22,19 @@ This collaborative approach has several benefits:
 ### Create Category and Subcategory DataFrames
 
 Category DataFrame:
+
   Extract and transform crowdfunding.xlsx data.
   Columns: category_id (sequential from cat1 to catn), category (category titles).
   Export as category.csv and save to GitHub.
   
 Subcategory DataFrame:
+
   Extract and transform crowdfunding.xlsx data.
   Columns: subcategory_id (sequential from subcat1 to subcatn), subcategory (subcategory titles).
   Export as subcategory.csv and save to GitHub.
   
 Create Campaign DataFrame
+
   Extract and transform crowdfunding.xlsx data.
   Columns:
       cf_id, contact_id, company_name, description (renamed from blurb), goal (float), pledged (float), outcome, backers_count, country, 
@@ -40,6 +43,7 @@ Create Campaign DataFrame
   Export as campaign.csv and save to GitHub.
   
 Create Contacts DataFrame
+
   Import contacts.xlsx into a DataFrame.
     Convert each row to a dictionary.
     Extract dictionary values and add them to a new list.
